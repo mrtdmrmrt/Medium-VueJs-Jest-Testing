@@ -1,13 +1,22 @@
 {
-  "name": "vue-jest-test",
+  "name": "@mrtdmrmrt/md-button",
+  "main":"./dist/mdbutton.common.js",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "scripts": {
     "test": "jest",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "build-bundle":"vue-cli-service build --target lib --name mdbutton ./src/components/index.js",
     "lint": "vue-cli-service lint"
   },
+  "files":[
+    "dist/*",
+    "src/*",
+    "public/*",
+    "*.json",
+    "*.js"
+  ],
   "dependencies": {
     "core-js": "^3.6.4",
     "vue": "^2.6.11"
